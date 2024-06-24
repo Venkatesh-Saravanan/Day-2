@@ -1,0 +1,51 @@
+The difference between Document and Window object
+
+The document and window object are the object whose interfaces you generally use most often in DOM 
+programming. In simple terms, the window object represents like the browser and the document object is the
+root of the document itself. Elememt inherits from the generic node interface and together these two 
+interfaces provide many of the methods and properties use on individual element.
+
+Window objects:
+The window object is a global object i client side javascript, representing the browser window containing a
+DOM document andd acting as the root of the document object model. The window object supporting by all browser
+and represent the browser's window and automatically includes global javascript objects, functions and 
+variables as member. The window object is responsible for managing the global variables, functions and objects
+providing methods for browser interaction and managing properties related to frames, tabs, windows such as 
+alert(), confirm(), setTimeout() and setInterval().
+
+Few Properties of Window objects are,
+
+window.innerHeight - the inner height of the browser window(in pixels)
+window.innerWidth - the inner width of the browser window(in pixels)
+
+Few Methhodds of Window objects are,
+
+window.open() - open a new window
+window.close() - close the current window
+window.moveTo() - move the current window
+window.resizeTo() - resize the current window
+
+Document objects:
+The document object is the HTML document that appears in the browser window and serves as an interface
+for interacting with the web pages content.The browser generates a document object model of a web page 
+upon loading it.
+
+The DOM manipulating tool offer methods to access and manipulate the structure and content of a document
+such  as getElementById(),querySelector(), createElement() and innerHTML. It represents the entire HTML
+document as a node tree, with the document object as the root node. It allow dynamic updates and interactions
+with the web page content.
+
+Few Properties of Document objects are,
+
+element.innerHTML - new HTML content or change the inner html of a element
+element.attributes - new value or change the attributes value of an element
+
+Few Methods of Document object are,
+
+document.createElement(element) - create a HTML document
+ddocument.removeChild(element) - remove a HTML document
+
+In conclusion of the difference between document and window object is crucial in javascript and web
+development. Windows manage the browser interactions while document acts as an interface for content
+manipulation. Using these functionalities allows developers to create interactives web experiences.
+
